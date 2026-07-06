@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router";
 import { LanguageProvider } from "./i18n/LanguageContext";
-import AccessoriesPage from "./pages/residential/accessoriespage";
+import AccessoriesPage from "./pages/residential/AccessoriesPage";
 import AccessoriesDetailPage from "./pages/residential/AccessoriesDetailPage";
 import PageLayout from "./components/layout/PageLayout";
 import WhatAreMetalRoofTiles from "./pages/resources/WhatAreMetalRoofTiles";
