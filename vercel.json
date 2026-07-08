@@ -1,0 +1,5 @@
+{
+  "buildCommand": "echo 'Build skipped'",
+  "outputDirectory": "dist",
+  "framework": null
+}

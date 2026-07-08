@@ -32,7 +32,6 @@ export default function ProductDetailPage() {
 
   return (
     <div>
-      {/* Breadcrumb */}
       <div className="bg-[var(--secondary)] border-b border-[var(--border)] py-2.5 px-6">
         <div className="max-w-7xl mx-auto flex items-center gap-2 text-xs font-sans text-gray-500">
           <Link to="/" className="hover:text-[var(--gaf-red)]">{lang === "tr" ? "Ana Sayfa" : "Home"}</Link>
@@ -43,12 +42,18 @@ export default function ProductDetailPage() {
         </div>
       </div>
 
-      {/* Hero */}
       <section className="py-16 px-6 bg-white">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <motion.div initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.4 }}>
             <div className="aspect-[4/3] overflow-hidden bg-gray-100">
-              <img src={product.image} alt={`${product.series} ${product.colorName}`} className="w-full h-full object-cover" />
+              <img 
+                src={product.image} 
+                alt={`${product.series} ${product.colorName}`} 
+                className="w-full h-full object-cover" 
+                loading="lazy"
+                width="800"
+                height="600"
+              />
             </div>
             <div className="flex items-center justify-between mt-4 gap-4">
               {prevProduct ? (
@@ -90,7 +95,6 @@ export default function ProductDetailPage() {
               ))}
             </div>
 
-            {/* Colour strip */}
             <div className="mb-8">
               <p className="text-xs font-semibold uppercase tracking-widest text-gray-500 mb-3 font-sans">
                 {t("productDetail.allColours").replace("{series}", product.series)}
@@ -100,22 +104,23 @@ export default function ProductDetailPage() {
                   <Link key={p.id} to={`/products/residential/${p.slug}`} title={`${p.colorName} — ${p.colorNameEn}`}
                     className={`relative overflow-hidden transition-all ${p.id === product.id ? "ring-2 ring-[var(--gaf-red)] ring-offset-1" : "opacity-70 hover:opacity-100"}`}>
                     <div className="w-10 h-10 overflow-hidden">
-                      <img src={p.image} alt={p.colorName} className="w-full h-full object-cover" />
+                      <img 
+                        src={p.image} 
+                        alt={p.colorName} 
+                        className="w-full h-full object-cover" 
+                        loading="lazy"
+                        width="40"
+                        height="40"
+                      />
                     </div>
                   </Link>
                 ))}
               </div>
-              <p className="text-xs text-gray-500 font-sans mt-2">
-                {t("productDetail.currentlyViewing")} <span className="font-semibold text-[var(--gaf-near-black)]">{product.colorName}</span>
-              </p>
             </div>
-            
-            {/* Butonlar buradan kaldırıldı */}
           </div>
         </div>
       </section>
 
-      {/* Details */}
       <section className="py-16 px-6 bg-[var(--secondary)]">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
@@ -136,7 +141,6 @@ export default function ProductDetailPage() {
         </div>
       </section>
 
-      {/* Related */}
       {related.length > 0 && (
         <section className="py-16 px-6 bg-white">
           <div className="max-w-7xl mx-auto">
@@ -147,7 +151,14 @@ export default function ProductDetailPage() {
               {related.map((p) => (
                 <Link key={p.id} to={`/products/residential/${p.slug}`} className="group block">
                   <div className="aspect-[4/3] overflow-hidden bg-gray-100 mb-2">
-                    <img src={p.image} alt={p.colorName} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <img 
+                      src={p.image} 
+                      alt={p.colorName} 
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                      loading="lazy"
+                      width="400"
+                      height="300"
+                    />
                   </div>
                   <p className="font-semibold text-sm text-[var(--gaf-near-black)] group-hover:text-[var(--gaf-red)] transition-colors font-sans">{p.colorName}</p>
                   <p className="text-gray-500 text-xs font-sans">{p.colorNameEn}</p>

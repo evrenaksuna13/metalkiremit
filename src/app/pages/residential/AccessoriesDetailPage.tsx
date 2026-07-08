@@ -35,7 +35,14 @@ export default function AccessoriesDetailPage() {
       <section className="py-16 px-6">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="bg-gray-100 p-8">
-            <img src={product.img} alt={product.name} className="w-full object-contain" />
+            <img 
+              src={product.img} 
+              alt={product.name} 
+              className="w-full object-contain" 
+              loading="lazy"
+              width="500"
+              height="500"
+            />
           </div>
           <div>
             <h1 className="text-4xl font-bold mb-4">{product.name}</h1>

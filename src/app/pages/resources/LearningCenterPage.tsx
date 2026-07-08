@@ -7,11 +7,14 @@ export default function LearningCenterPage() {
 
   // Görseller artık public klasöründe olduğu için doğrudan yollarını yazıyoruz
   const kurulumGorselleri = [
-    "/metalkiremit.Kurulum.jpg",
-    "/metalkiremit.Kurulum2.jpg",
-    "/metalkiremit.Kurulum3.jpg",
-    "/metalkiremit.Kurulum4.jpg",
-    "/metalkiremit.Kurulum5.jpg",
+    "/kurulum1.jpg",
+    "/kurulum2.jpg",
+    "/kurulum3.jpg",
+    "/kurulum4.jpg",
+    "/kurulum5.jpg",
+    "/kurulum6.jpg",
+    "/kurulum7.jpg",
+    "/kurulum8.jpg",
   ];
 
   return (
