@@ -44,7 +44,7 @@ const router = createBrowserRouter([
       { path: "resources", element: <LearningCenterPage /> },
       { path: "resources/:slug", element: <ArticleDetailPage /> },
       { path: "about", element: <AboutPage /> },
-      { path: "/WhatAreMetalRoofTiles", element: <WhatAreMetalRoofTiles /> },
+      { path: "/whataremetalrooftiles", element: <WhatAreMetalRoofTiles /> },
       { path: "/videos", element: <Videos /> },
       { path: "about/sustainability", element: <SustainabilityPage /> },
       { path: "about/warranty", element: <WarrantyPage /> },

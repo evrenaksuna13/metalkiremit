@@ -73,7 +73,7 @@ export default function HomePage() {
             <Link to="/resources" className="inline-block bg-[var(--gaf-red)] text-white px-8 py-3 font-bold hover:bg-black transition-colors">Tüm Kaynakları Keşfet</Link>
           </div>
           <div className="grid grid-cols-2 gap-4">
-            <Link to="/WhatAreMetalRoofTiles" className="p-8 border border-darkgray-200 hover:border-[var(--gaf-red)] transition-all text-center font-semibold">Metal Kiremit Nedir?</Link>
+            <Link to="/whataremetalrooftiles" className="p-8 border border-darkgray-200 hover:border-[var(--gaf-red)] transition-all text-center font-semibold">Metal Kiremit Nedir?</Link>
             <Link to="/videos" className="p-8 border border-darkgray-200 hover:border-[var(--gaf-red)] transition-all text-center font-semibold">Eğitim Videoları</Link>
             <Link to="/about/warranty" className="p-8 border border-darkgray-200 hover:border-[var(--gaf-red)] transition-all text-center font-semibold col-span-2">Garanti Koşullarını İncele</Link>
           </div>
