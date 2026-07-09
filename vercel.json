@@ -1,5 +1,4 @@
 {
-  "buildCommand": "echo 'Build skipped'",
-  "outputDirectory": "dist",
-  "framework": null
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist"
 }
