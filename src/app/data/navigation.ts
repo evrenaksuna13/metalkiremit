@@ -58,7 +58,7 @@ export const NAV_ITEMS: NavItem[] = [
         headingKey: "nav.learn",
         links: [
           { label: "Assembly Guide", labelTr: "Montaj Rehberi", href: "/resources" },
-          { label: "What are Metal Roof Tiles?", labelTr: "Metal Kiremit Nedir?", href: "/whataremetalrooftiles"},
+          { label: "What are Metal Roof Tiles?", labelTr: "Metal Kiremit Nedir?", href: "/WhatAreMetalRoofTiles"},
           { label: "Videos", labelTr: "Videolar", href: "/videos"},
         ],
       },
