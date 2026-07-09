@@ -23,6 +23,8 @@ import WarrantyPage from "./pages/about/WarrantyPage";
 import ContactPage from "./pages/about/ContactPage"; 
 import MetalKiremitFarkiPage from "./pages/about/MetalKiremitFarkiPage"; 
 
+
+
 const router = createBrowserRouter([
   {
     path: "/",
